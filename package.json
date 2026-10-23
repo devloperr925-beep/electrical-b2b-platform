@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Industrial Electrical Supplies B2B Procurement Platform & Vendor Management System",
   "scripts": {
+    "build": "node scripts/build-html.js",
     "build:html": "node scripts/build-html.js",
     "watch": "node scripts/watch.js",
     "start": "node scripts/local-server.js",
