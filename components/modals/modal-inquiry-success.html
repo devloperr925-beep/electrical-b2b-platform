@@ -1,0 +1,24 @@
+<dialog class="custom-modal" id="inquirySuccessModal">
+    <div class="modal-content-box" style="max-width: 680px;">
+      <div class="modal-header">
+        <h3 style="display: flex; align-items: center; gap: 0.5rem; color: #166534;">
+          <i data-lucide="check-circle" style="color: #16a34a; width: 22px; height: 22px;"></i>
+          Inquiry Successfully Dispatched!
+        </h3>
+        <button class="close-drawer-btn" onclick="app.closeModal('inquirySuccessModal')">&times;</button>
+      </div>
+      <div class="modal-body" id="inquirySuccessBody">
+        <!-- Rendered dynamically via InquirySubmitModule.openSuccessModal -->
+      </div>
+      <div class="modal-footer" style="display: flex; justify-content: space-between; align-items: center;">
+        <button type="button" class="btn-secondary" onclick="DOMUtils.copyToClipboard(AppState.data.lastSubmittedInquiry ? AppState.data.lastSubmittedInquiry.id : ''); DOMUtils.showToast('RFQ Reference number copied!', 'info');">
+          <i data-lucide="copy" style="width: 15px; height: 15px;"></i>
+          Copy Reference ID
+        </button>
+        <button type="button" class="btn-primary" onclick="app.closeModal('inquirySuccessModal')">
+          <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+          Continue Browsing Products
+        </button>
+      </div>
+    </div>
+  </dialog>

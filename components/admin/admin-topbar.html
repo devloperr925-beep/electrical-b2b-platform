@@ -1,0 +1,24 @@
+<header class="admin-topbar">
+  <div style="display: flex; align-items: center; gap: 0.75rem;">
+    <!-- Mobile Sidebar Toggle -->
+    <button class="admin-sidebar-toggle" id="adminSidebarToggleBtn" onclick="app.toggleAdminSidebar()" aria-label="Toggle admin sidebar" title="Open Admin Menu">
+      <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
+    </button>
+    <h2 id="adminPageHeaderTitle" class="admin-page-title">Admin Dashboard</h2>
+  </div>
+
+  <div class="admin-topbar-actions">
+    <button class="btn-secondary admin-btn" onclick="app.openNewProductModal()" title="Create New Product">
+      <i data-lucide="plus" style="width: 16px; height: 16px;"></i>
+      <span class="btn-text">New Product</span>
+    </button>
+    <button class="btn-primary admin-btn" onclick="app.switchView('public')" title="Back to Customer Storefront">
+      <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
+      <span class="btn-text">Public Store</span>
+    </button>
+    <button class="btn-xs-outline admin-logout-btn" onclick="app.handleAdminLogout()" title="Sign out from Admin">
+      <i data-lucide="log-out" style="width: 14px; height: 14px;"></i>
+      <span class="btn-text">Logout</span>
+    </button>
+  </div>
+</header>
